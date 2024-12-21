@@ -21,7 +21,7 @@ public abstract class Floats extends Rectangle{
      * @param height height of the object
      */
     public Floats(int width, int height){
-
+        
         super(width,height);
         
     }

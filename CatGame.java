@@ -219,7 +219,7 @@ public class CatGame extends Application {
                 }
                 //heart spawning
                 if (currentTime - heartLastSpawnTime >= heartSpawnInterval) {
-                    spawnRandomHeart();
+                    spawnRandomHeart(gameScene);
                     heartLastSpawnTime = currentTime;  
                 }
                 //plane spawning
@@ -295,10 +295,11 @@ public class CatGame extends Application {
 
     /*
      * Spawns a heart randomly
+     * @param scene the game scene where the object must be added to
      */
-    public void spawnRandomHeart(){
+    public void spawnRandomHeart(Scene s){
         Hearts h;
-        h=new Hearts();
+        h=new Hearts(s);
         game.getChildren().add(h);
         hearts.add(h);
     }
