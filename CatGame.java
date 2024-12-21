@@ -302,6 +302,10 @@ public class CatGame extends Application {
         game.getChildren().add(h);
         hearts.add(h);
     }
+    /*
+     * updates position of hearts
+     * @param p the user cat that will be checked for collisions
+     */
     public void updateHearts(PetCat p){
         for(Hearts c:hearts){ //checks all existing hearts
 
@@ -330,6 +334,10 @@ public class CatGame extends Application {
         game.getChildren().add(p);
         planes.add(p);
     }
+    /*
+     * updates position of planes
+     * @param p the user cat that will be checked for collisions
+     */
     public void updatePlanes(PetCat p){
         for(Plane c:planes){ //checks all existing planes
             c.updatePosition(); //updates plane positions
